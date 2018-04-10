@@ -35,6 +35,9 @@ class App extends Component {
       ]
     });
     if (this.state.guessed.includes(id)) {
+      if (this.state.score > this.state.topScore){
+        this.setState({topScore: this.state.score});
+      }
       this.setState({score: 0, guessed: [], info: 'Incorrect Guess! You LOSE! Try again!'});
       this.cardShuffler();
     } else
