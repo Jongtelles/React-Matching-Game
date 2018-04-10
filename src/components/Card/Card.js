@@ -1,10 +1,17 @@
 import React from 'react';
+import Col from '../Col'
 import "./Card.css";
 
 const Card = props => (
-  <div className="card mx-auto">
-        <img className="card-img img-fluid" onClick={props.onClick} key={props.id} id={props.id} src={props.image} data-clicked={props.data} alt=''/>
-      </div>
+  <Col>
+    <div className="notACard">
+      <img
+        className="img-fluid"
+        onClick={props.onClick}
+        src={props.image}
+        alt=''/>
+    </div>
+  </Col>
 );
 
 export default Card;

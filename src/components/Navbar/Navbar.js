@@ -1,27 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "./Navbar.css";
 
-class Navbar extends Component {
-  state = {
-    score: 0,
-    topScore: 0,
-    lastGuess: 'Click an Image to start'
-  };
-  render() {
-    return (
-      <nav
-        className="navbar navbar-dark bg-dark fixed-top mb-2 justify-content-around text-light">
-        <a className="navbar-brand" href="/">
-          Match It
-        </a>
+const Navbar = props => (
+  <nav
+  className="navbar navbar-dark bg-dark fixed-top mb-2 justify-content-around text-light">
+  <a className="navbar-brand" href="/">
+    <h2>Dog Match</h2>
+  </a>
 
-        <h2>{this.state.lastGuess}</h2>
+  <h2>{props.info}</h2>
 
-        <h3>Score: {this.state.score} | Top Score: {this.state.topScore}</h3>
+  <h3>Score: {props.score} | Top Score: {props.topScore}</h3>
 
-      </nav>
-    )
-  }
-}
+</nav>
+);
 
 export default Navbar;

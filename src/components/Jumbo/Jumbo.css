@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url('./bg.jpg');
+    background-size: contain;
+    color: rgb(0, 224, 138);
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+}

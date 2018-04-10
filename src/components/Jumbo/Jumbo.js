@@ -3,10 +3,11 @@ import "./Jumbo.css";
 
 const Jumbo = props => (
   <div className="jumbotron jumbotron-fluid mt-5">
-    <div className="container text-center">
-      <h1>MATCHIN' GAME</h1>
-      <p>This is a modified jumbotron that occupies the entire horizontal
-        space of its parent.</p>
+    <div className='overlay'>
+      <div className="container text-center">
+        <h1>MATCHING GAME</h1>
+        <p>Click the images without repeating!</p>
+      </div>
     </div>
   </div>
 );
